@@ -8,7 +8,6 @@ const nextConfig = {
     experimental: {
         appDir: true, // Example for experimental features
     },
-    // Exclude API routes from static export
     async rewrites() {
         return [
             {
