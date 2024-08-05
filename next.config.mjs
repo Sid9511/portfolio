@@ -2,6 +2,7 @@ import { withSentryConfig } from '@sentry/nextjs';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // Enables static export
   basePath: '/portfolio', // Replace with your repository name
   assetPrefix: '/portfolio/',
   // Add any other configurations you need here
