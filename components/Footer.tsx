@@ -13,10 +13,10 @@ const Footer = () => {
 
 
   const handleDownload = () => {
-    const resumeUrl = "/resume.pdf";
+    const resumeUrl = "/Siddhant Deshmukh Resume.pdf";
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "resume.pdf";
+    link.download = "/Siddhant Deshmukh Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
