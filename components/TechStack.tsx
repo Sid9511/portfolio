@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Define the type for the `duration` parameter
+// Define the type for the `duration` parameter and transition settings
 const float = (duration: number) => ({
     initial: { y: -12 },
     animate: {
@@ -10,7 +10,7 @@ const float = (duration: number) => ({
             duration: duration,
             ease: 'linear',
             repeat: Infinity,
-            repeatType: 'reverse'
+            repeatType: 'reverse' as const, // Ensure `repeatType` is a specific string literal
         }
     }
 });
