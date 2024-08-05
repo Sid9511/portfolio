@@ -2,28 +2,23 @@ import { withSentryConfig } from '@sentry/nextjs';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: '/portfolio', // Replace with your repository name
-    assetPrefix: '/portfolio/',
-    output: 'export', // Ensure this is set for static export
-    experimental: {
-        appDir: true, // Example for experimental features
-    },
+    basePath: '', // Correct for root directory
+    assetPrefix: '', // Also set to empty for root
+    output: 'export', 
     async rewrites() {
-        return [
-            {
-                source: '/api/:path*',
-                destination: '/api/:path*', // Pass through to the API routes
-            },
-        ];
+        return [];
     },
 };
 
-export default withSentryConfig(nextConfig, {
+// Sentry configuration
+const sentryConfig = {
     org: "self-nn2",
     project: "my-portfolio",
-    silent: !process.env.CI,
+    silent: !process.env.CI, // Only log if not in CI
     widenClientFileUpload: true,
     hideSourceMaps: true,
     disableLogger: true,
     automaticVercelMonitors: true,
-});
+};
+
+export default withSentryConfig(nextConfig, sentryConfig);

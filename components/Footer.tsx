@@ -9,17 +9,8 @@ import animationData from "@/data/confetti.json";
 
 const Footer = () => {
 
-  const [copied, setCopied] = useState(false);
   const [downloaded, setDownloaded] = useState(false);
 
-  const handleCopy = () => {
-    const text = "siddhantdeshmukhwork@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => {
-      setCopied(false);
-    }, 5000);
-  };
 
   const handleDownload = () => {
     const resumeUrl = "/resume.pdf";
@@ -36,15 +27,6 @@ const Footer = () => {
     }, 5000);
   };
   
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
 
 
   return (
@@ -71,14 +53,6 @@ const Footer = () => {
         </p>
 
           <div className="flex gap-10">
-            <MagicButton
-                  title={copied ? "Email is Copied!" : "Copy my Email address"}
-                  icon={<IoCopyOutline />}
-                  position="left"
-                  handleClick={handleCopy}
-                  otherClasses="!bg-[#161A31]"
-                />
-
             <MagicButton
               title={downloaded ? "Resume Downloaded!" : "Download my Resume"}
               icon={<IoDownloadOutline />}
