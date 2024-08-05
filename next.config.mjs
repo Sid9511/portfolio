@@ -6,11 +6,18 @@ const nextConfig = {
     assetPrefix: '/portfolio/',
     output: 'export', // Ensure this is set for static export
     experimental: {
-      // Add experimental settings if needed
-      appDir: true, // Example for experimental features
+        appDir: true, // Example for experimental features
+    },
+    // Exclude API routes from static export
+    async rewrites() {
+        return [
+            {
+                source: '/api/:path*',
+                destination: '/api/:path*', // Pass through to the API routes
+            },
+        ];
     },
 };
-
 
 export default withSentryConfig(nextConfig, {
     org: "self-nn2",
@@ -20,4 +27,4 @@ export default withSentryConfig(nextConfig, {
     hideSourceMaps: true,
     disableLogger: true,
     automaticVercelMonitors: true,
-  });
+});
