@@ -30,29 +30,29 @@ const Footer = () => {
 
 
   return (
-    <footer className="w-full h-full pt-20 pb-10 mb-10 md:mb-5" id="contact" >
+    <footer className="w-full h-full pt-20 pb-10 lg:mb-10 mb-5 " id="contact" >
   
       <div className="w-full absolute left-0">
         <img
           src="/footer-grid.svg"
           alt="grid"
-          className="w-full h-full opacity-90 relative z-0 -translate-y-60"
+          className="hidden lg:block md:block w-full h-full opacity-90 relative z-0 lg:-translate-y-55 "
         />
       </div>
 
 
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
+        <h1 className="heading max-w-[90vw] lg:max-w-[60vw]" style={{ lineHeight: '1.5' }}>
           Ready to take <span className="text-purple">your</span> digital
           presence to the next level?
         </h1>
 
-        <p className="text-white-200 md:mt-10 my-5 text-center">
+        <p className="text-white-200 my-10 text-center max-w-[75vw]">
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
 
-          <div className="flex gap-10">
+          <div className="flex gap-10 ">
             <MagicButton
               title={downloaded ? "Resume Downloaded!" : "Download my Resume"}
               icon={<IoDownloadOutline />}
@@ -63,12 +63,12 @@ const Footer = () => {
           </div>  
       </div>
       
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
+      <div className="flex mt-14 md:flex-row flex-col justify-between items-center">
+        <p className="text-sm md:font-normal font-light mb-8 lg:mb-0 md:mb-0">
           Copyright © 2024 Siddhant Deshmukh
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6 mr-10">
+        <div className="flex items-center gap-6 lg:mr-10">
           {socialMedia.map((info) => (
             <div
               key={info.id}

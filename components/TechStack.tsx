@@ -17,7 +17,7 @@ const float = (duration: number) => ({
 
 const TechStack: React.FC = () => {
     return (
-        <div className='border-b border-neutral-800 py-36' id="techstack">
+        <div className='border-b border-neutral-800 py-20 md:py-32 lg:py-36' id="techstack">
             <h1 className="heading mb-24 text-center">
                 Tech{" "}
                 <span className="text-purple">Stack</span>
@@ -29,7 +29,7 @@ const TechStack: React.FC = () => {
                     initial='initial'
                     animate='animate'
                     className='rounded-2xl border-4 border-neutral-800 p-4'>
-                    <img src='./js.svg' className='w-14 h-14' alt='JavaScript'/>
+                    <img src='./js.svg' className=' w-10 h-10 lg:w-14  lg:h-14' alt='JavaScript'/>
                 </motion.div>
                 
                 <motion.div 
@@ -37,7 +37,7 @@ const TechStack: React.FC = () => {
                     initial='initial'
                     animate='animate'
                     className='rounded-2xl border-4 border-neutral-800 p-4'>
-                    <img src='./react.svg' className='w-14 h-14' alt='React'/>
+                    <img src='./react.svg' className=' w-10 h-10 lg:w-14  lg:h-14' alt='React'/>
                 </motion.div>
                 
                 <motion.div 
@@ -45,7 +45,7 @@ const TechStack: React.FC = () => {
                     initial='initial'
                     animate='animate'
                     className='rounded-2xl border-4 border-neutral-800 p-4'>
-                    <img src='./ts.svg' className='w-14 h-14' alt='TypeScript'/>
+                    <img src='./ts.svg' className=' w-10 h-10 lg:w-14  lg:h-14' alt='TypeScript'/>
                 </motion.div>
                 
                 <motion.div 
@@ -53,7 +53,7 @@ const TechStack: React.FC = () => {
                     initial='initial'
                     animate='animate'
                     className='rounded-2xl border-4 border-neutral-800 p-4'>
-                    <img src='./next.svg' className='w-14 h-14' alt='Next.js'/>
+                    <img src='./next.svg' className=' w-10 h-10 lg:w-14  lg:h-14' alt='Next.js'/>
                 </motion.div>
                 
                 <motion.div 
@@ -61,7 +61,7 @@ const TechStack: React.FC = () => {
                     initial='initial'
                     animate='animate'
                     className='rounded-2xl border-4 border-neutral-800 p-4'>
-                    <img src='./tailwind.svg' className='w-14 h-14' alt='Tailwind CSS'/>
+                    <img src='./tailwind.svg' className=' w-10 h-10 lg:w-14  lg:h-14' alt='Tailwind CSS'/>
                 </motion.div>
 
                 <motion.div 
@@ -69,7 +69,7 @@ const TechStack: React.FC = () => {
                     initial='initial'
                     animate='animate'
                     className='rounded-2xl border-4 border-neutral-800 p-4'>
-                    <img src='./acertinity.svg' className='w-14 h-14' alt='Acertinity'/>
+                    <img src='./acertinity.svg' className=' w-10 h-10 lg:w-14  lg:h-14' alt='Acertinity'/>
                 </motion.div>
 
                 <motion.div 
@@ -77,7 +77,7 @@ const TechStack: React.FC = () => {
                     initial='initial'
                     animate='animate'
                     className='rounded-2xl border-4 border-neutral-800 p-4'>
-                    <img src='./node.svg' className='w-14 h-14' alt='Node.js'/>
+                    <img src='./node.svg' className=' w-10 h-10 lg:w-14  lg:h-14' alt='Node.js'/>
                 </motion.div>
 
                 <motion.div 
@@ -85,7 +85,7 @@ const TechStack: React.FC = () => {
                     initial='initial'
                     animate='animate'
                     className='rounded-2xl border-4 border-neutral-800 p-4'>
-                    <img src='./express.svg' className='w-14 h-14' alt='Express'/>
+                    <img src='./express.svg' className=' w-10 h-10 lg:w-14  lg:h-14' alt='Express'/>
                 </motion.div>
             </div>
         </div>
