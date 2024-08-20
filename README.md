@@ -25,17 +25,17 @@ All of this is seamlessly hosted and deployed on the Vercel platform, ensuring o
 3. Run the following commands:
 
    
-bash
+```bash
    npm install
    npm run start
-
+```
 
 For building the app:
 
    
-bash
+```bash
    npm run build
-
+```
 
 ## **Suggestions and Feedback**
 
