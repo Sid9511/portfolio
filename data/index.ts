@@ -86,7 +86,7 @@ export const projects = [
     title: "NewsApp - Daily dose of news",
     des: "NewsApp is a React.js-based platform providing real-time, global news coverage across various categories, powered by NewsAPI.",
     img: "/newsapp.png",
-    iconLists: ["/react.svg"],
+    iconLists: ["/react.svg", "/tailwind.svg"],
     link: "https://sid9511.github.io/NewsApp/",
   },
   {
