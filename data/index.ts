@@ -67,6 +67,14 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "Drone Simulator",
+    des: "Drone Simulator is an interactive application that provides users with an immersive experience of drone navigation on a world map.",
+    img: "/dronesimulator.png",
+    iconLists: ["/react.svg", "/tailwind.svg", "/mapbox.svg"],
+    link: "https://sid9511.github.io/drone-simulator/",
+  },
+  {
+    id: 2,
     title: "PassLock - Password Manager",
     des: "PassLock is a sleek, cloud-based password manager that securely stores and manages credentials with a user-friendly React.js interface and reliable backend performance.",
     img: "/passlock.png",
@@ -74,7 +82,7 @@ export const projects = [
     link: "https://sid9511.github.io/passlock/",
   },
   {
-    id: 2,
+    id: 3,
     title: "RoboTrix - AI-powered web application",
     des: "RoboTrix provides instant code generation, real-time debugging, customizable UI, and enhanced security for seamless development",
     img: "/robotrix.png",
@@ -82,7 +90,7 @@ export const projects = [
     link: "https://sid9511.github.io/robotrix/",
   },
   {
-    id: 3,
+    id: 4,
     title: "NewsApp - Daily dose of news",
     des: "NewsApp is a React.js-based platform providing real-time, global news coverage across various categories, powered by NewsAPI.",
     img: "/newsapp.png",
@@ -90,7 +98,7 @@ export const projects = [
     link: "https://sid9511.github.io/NewsApp/",
   },
   {
-    id: 4,
+    id: 5,
     title: "TextTools - Text Modifier",
     des: "Text Tools, developed using React.js, features various text modification tools and a sleek interface",
     img: "/texttools.png",
@@ -168,7 +176,7 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Developer Intern",
+    title: "Web Developer Intern",
     desc: "Contributed in developing a Text app using React.js, improving text modification and user interaction.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
@@ -176,20 +184,20 @@ export const workExperience = [
   {
     id: 2,
     title: "Web Developer Intern",
-    desc: "Built an online shopping site with HTML, CSS, and JavaScript, boosting user satisfaction and reducing cart abandonment rate",
+    desc: "Contributed in developing a Text app using React.js, improving text modification and user interaction.",
     className: "md:col-span-2", 
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Web Developer Intern",
-    desc: "Built an online shopping site with HTML, CSS, and JavaScript, boosting user satisfaction and reducing cart abandonment rate",
-    className: "md:col-span-2", 
+    desc: "Contributed in developing a Text app using React.js, improving text modification and user interaction.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Frontend Developer Intern",
+    title: "Web Developer Intern",
     desc: "Contributed in developing a Text app using React.js, improving text modification and user interaction.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
