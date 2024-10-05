@@ -37,7 +37,7 @@ const Hero = () => {
           />
 
           <p className="text-center mb-5 lg:mb-1 md:mb-1  md:tracking-wider text-sm md:text-lg lg:text-[19px]">
-            Hi! I&apos;m Siddhant, a Full-stack developer building sleek and efficient websites
+            Hi! I&apos;m Siddhant, a Frontend Developer building sleek and efficient websites
           </p>
 
           <a href="#projects">
